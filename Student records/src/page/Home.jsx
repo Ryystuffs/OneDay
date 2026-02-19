@@ -10,7 +10,7 @@ const Home = () => {
       provider: 'google',
       options: {
         // Make sure this matches the port your React app runs on
-        redirectTo: 'http://localhost:3000/form', 
+        redirectTo: 'http://localhost:5173/form', 
       },
     });
 
