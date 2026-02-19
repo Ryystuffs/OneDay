@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import './backend/app.js';
 
 function App() {
   return (
