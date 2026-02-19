@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './backend/app.js';
 
 function App() {
   // Array of data to easily map through and render the cards
