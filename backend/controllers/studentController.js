@@ -5,7 +5,7 @@ export async function addStudent (req, res) {
     const { student_number, full_name, email_address, year_level, course} = req.body
     
     const { data, error } = await supabase
-      .from('users')
+      .from('students')
       .insert([{ student_number, full_name, email_address, year_level, course }])
       .select()
 
@@ -26,10 +26,12 @@ export async function addStudent (req, res) {
 export async function updateStudent (req, res) {
   try {
     const { id } = req.params
-
+    const toBeUpdate  = req.body
+    console.log(toBeUpdate)
+    
     const { data, error } = await supabase
-      .from('users')
-      .update({ })
+      .from('students')
+      .update(toBeUpdate)
       .eq('id', id)
       .select()
 
@@ -52,7 +54,7 @@ export async function deleteStudent (req, res) {
     const { id } = req.params
 
     const { data, error } = await supabase
-      .from('users')
+      .from('students')
       .delete()
       .eq('id', id)
       .select() // returns the deleted row(s)
@@ -61,7 +63,6 @@ export async function deleteStudent (req, res) {
 
     res.json({
       success: true,
-      data,
       message: 'User deleted successfully'
     })
   } catch (err) {

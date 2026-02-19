@@ -1,8 +1,7 @@
 import dotenv from 'dotenv'
 import express from 'express'
 import cors from 'cors'
-import { routes as studentRoutes} from './routes/studentRoute'
-import cookieParser from 'cookie-parser'
+import { routes as studentRoutes} from './routes/studentRoute.js'
 
 dotenv.config()
 
