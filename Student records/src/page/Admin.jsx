@@ -25,7 +25,7 @@ const Admin = () => {
     <div className="w-full min-h-screen bg-white text-black font-sans">
       <div className="w-full bg-[#f1f1f1] border-b-2 border-blue-500 py-4 px-8 flex items-center gap-3">
         <div className="w-8 h-8 rounded-full bg-gray-300"></div>
-        <h2 className="text-gray-700 font-medium">Hello, Admin Jude!</h2>
+        <h2 className="text-gray-700 font-medium">Hello, Admin!</h2>
       </div>
 
       <div className="max-w-5xl mx-auto mt-10 px-8">
