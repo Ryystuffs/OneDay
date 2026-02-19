@@ -9,13 +9,8 @@ const Home = () => {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: {
-<<<<<<< Updated upstream
         // Make sure this matches the port your React app runs on
         redirectTo: 'http://localhost:5173/form', 
-=======
-        
-        redirectTo: 'http://localhost:5173/', 
->>>>>>> Stashed changes
       },
     });
 
