@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css'
 import './App.css';
 import AddStudent from './page/AddStudent';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
